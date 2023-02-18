@@ -1,26 +1,26 @@
 # Getting Started with react-advanced-datatable
 
-npm install react-advanced-datatable
+    `npm install react-advanced-datatable`
 
 
 ## Usage
 1. Import the DataTable component, the necessary CSS styles, and Axios for making API requests:
-
+```javascript
 import DataTable from 'react-advanced-datatable';
 import axios from 'axios';
-
+```
 2. Define the state for the DataTable component, including the data, current page, rows per page, and total pages:
-
+```javascript
 const [state, setState] = useState({
   rowsPerPage: 3,
   data: [],
   currentPage: 2,
   totalPages: 0,
 });
-
+```
 
 3. Create a function to fetch the data from the API using Axios, and update the state with the results:
-
+```javascript
 const fetchData = async () => {
   await axios
     .get(`http://localhost:3001/api/books/page=${state.currentPage}&total=${state.rowsPerPage}`)
@@ -29,8 +29,9 @@ const fetchData = async () => {
       console.log(res.data);
     });
 };
-
+```
 4. Use the useEffect hook to fetch the data when the component mounts:
+```javascript
 <DataTable
   className={'striped table-bordered package-table'}
   state={state}
@@ -86,7 +87,7 @@ const fetchData = async () => {
     },
   ]}
 />
-
+```
 
 ## Props
 The DataTable component accepts the following props:
@@ -95,4 +96,3 @@ The DataTable component accepts the following props:
 * state: An object that defines the state of the table, including the data, current-page, rows-per-page, and  total-pages. Required.
 * setState: A function to update the state of the table. Required.
 * tableOptions: An array of objects that define the columns of the table, including their name, appearance, width, and rendering function. Required.
-<!--  -->

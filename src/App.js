@@ -45,23 +45,7 @@ const DataTable = ({ state, setState, className, backendPagination, fetchData, t
     }, [state.rowsPerPage, state.currentPage])
 
     return (
-        <section class="section">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        {/* <div class="card-header border border-light d-flex">
-                            <div class="search-bar">
-                                <form class="search-form d-flex align-items-center">
-                                    <input type="text" name="query" placeholder="Search" className="search-input" title="Enter search keyword" />
-                                    <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-                                </form>
-                            </div>
 
-                            <button type="button" class="btn btn-sm btn-secondary ms-auto">
-                                Add Record
-                            </button>
-                        </div> */}
-                        <div class="card-body">
                             <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns ">
                                 <div className='dataTable-container border rounded-1' style={{ overflowX: 'scroll' }} >
                                     <table className={'table ' + className} style={{ tableLayout: 'fixed' }}>
@@ -124,11 +108,6 @@ const DataTable = ({ state, setState, className, backendPagination, fetchData, t
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     );
 };
 
