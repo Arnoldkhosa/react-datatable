@@ -92,8 +92,9 @@ const fetchData = async () => {
 
 ## Props
 The DataTable component accepts the following props:
-*backendPagination: controls whether you want to paginate data from the server or not
+
 * className: The class name for the table. Optional.
+* backendPagination: controls whether you want to paginate data from the server or not.  By default the package paginates from the client side.
 * state: An object that defines the state of the table, including the data, current-page, rows-per-page, and  total-pages. Required.
 * setState: A function to update the state of the table. Required.
 * tableOptions: An array of objects that define the columns of the table, including their name, appearance, width, and rendering function. Required.
