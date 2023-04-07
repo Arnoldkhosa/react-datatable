@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import FrontendPagination from './FrontendPagination.jsx';
-import BackendPagination from './BackendPagination.jsx';
+import FrontendPagination from './FrontendPagination.js';
+import BackendPagination from './BackendPagination.js';
 
 const DataTable = ({ state, setState, className, backendPagination, fetchData, tableOptions }) => {
 
