@@ -87,14 +87,14 @@ const DataTable = ({ state, setState, className, backendPagination, fetchData, t
                                     </table>
                                 </div>
                                 <div class="d-flex mt-3">
-                                    {backendPagination ? <BackendPagination totalPages={state.totalPages} currentPage={state.currentPage} state={state} setState={setState} /> :
+                                    {/* {backendPagination ? <BackendPagination totalPages={state.totalPages} currentPage={state.currentPage} state={state} setState={setState} /> :
                                         <FrontendPagination
                                             currentPage={state.currentPage}
                                             handlePageChange={handlePageChange}
                                             data={state.data}
                                             rowsPerPage={state.rowsPerPage}
                                         />
-                                    }
+                                    } */}
                                     <div class=" ms-auto">
                                         <select id="rows-per-page" className='form-control rounded-1 rows-per-page' onChange={handleRowsPerPageChange} value={state.rowsPerPage}>
                                             <option value={1}>1 rows per page</option>

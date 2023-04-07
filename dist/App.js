@@ -87,17 +87,7 @@ const DataTable = ({
     }
   }, element.render ? element.render(item, item[element.column]) : item[element.column]))))))), /*#__PURE__*/React.createElement("div", {
     class: "d-flex mt-3"
-  }, backendPagination ? /*#__PURE__*/React.createElement(BackendPagination, {
-    totalPages: state.totalPages,
-    currentPage: state.currentPage,
-    state: state,
-    setState: setState
-  }) : /*#__PURE__*/React.createElement(FrontendPagination, {
-    currentPage: state.currentPage,
-    handlePageChange: handlePageChange,
-    data: state.data,
-    rowsPerPage: state.rowsPerPage
-  }), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     class: " ms-auto"
   }, /*#__PURE__*/React.createElement("select", {
     id: "rows-per-page",

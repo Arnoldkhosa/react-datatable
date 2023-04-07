@@ -1,6 +1,6 @@
 {
   "name": "react-advanced-datatable",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "babel": {
     "presets": [
       "@babel/preset-react"
